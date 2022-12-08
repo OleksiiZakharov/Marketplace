@@ -1,0 +1,194 @@
+.messageBlock {
+  text-align: center;
+}
+.auction-card {
+  background-color: transparent;
+  box-shadow: 0px 0px 6px #000;
+}
+
+.auction-card:hover {
+  box-shadow: 0px 0px 12px #000;
+}
+
+.auction-card-border {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    135deg,
+    rgb(255, 145, 2) 0%,
+    rgba(133, 131, 1, 0) 35%,
+    rgba(133, 131, 1, 0) 65%,
+    rgba(255, 145, 2) 100%
+  );
+
+  padding: 5px;
+  margin: 10px 5px;
+}
+
+.auction-card-icon {
+  min-width: 64px;
+  min-height: 64px;
+  max-width: 64px;
+  max-height: 64px;
+  margin-bottom: 10px;
+}
+
+.auction-icon {
+  min-width: 48px;
+  min-height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+  margin-bottom: 10px;
+  margin: 5px auto;
+}
+
+.abilities-block {
+  font-style: italic;
+  padding: 0 5px;
+}
+
+.card-info-block {
+  padding: 0 5px;
+}
+
+.card-info-block > div {
+  display: flex;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+.card-info-block > div:first-child {
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card-price-block {
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-price-block > input {
+  margin: 0 5px;
+}
+
+.auction-card-grade {
+  border: 2px solid;
+  border-image-slice: 1;
+  padding: 5px;
+  margin: 10px 5px;
+}
+
+.auction-card-grade-0 {
+  border-image-source: linear-gradient(
+    135deg,
+    rgb(177, 177, 177) 0%,
+    rgba(133, 131, 1, 0) 35%,
+    rgba(133, 131, 1, 0) 65%,
+    rgba(177, 177, 177) 100%
+  );
+}
+
+.auction-card-grade-1 {
+  border-image-source: linear-gradient(
+    135deg,
+    rgb(225, 245, 45) 0%,
+    rgba(133, 131, 1, 0) 35%,
+    rgba(133, 131, 1, 0) 65%,
+    rgba(225, 245, 45) 100%
+  );
+}
+.auction-card-grade-2 {
+  border-image-source: linear-gradient(
+    135deg,
+    rgb(129, 3, 141) 0%,
+    rgba(133, 131, 1, 0) 35%,
+    rgba(133, 131, 1, 0) 65%,
+    rgba(129, 3, 141) 100%
+  );
+}
+.auction-card-grade-3 {
+  border-image-source: linear-gradient(
+    135deg,
+    rgb(255, 145, 2) 0%,
+    rgba(133, 131, 1, 0) 35%,
+    rgba(133, 131, 1, 0) 65%,
+    rgba(255, 145, 2) 100%
+  );
+}
+
+.auction-card-grade-4 {
+  border-image-source: linear-gradient(
+    135deg,
+    rgb(2, 82, 255) 0%,
+    rgba(133, 131, 1, 0) 35%,
+    rgba(133, 131, 1, 0) 65%,
+    rgba(2, 82, 255) 100%
+  );
+}
+
+.auction-card-grade-5 {
+  border-image-source: linear-gradient(
+    135deg,
+    rgb(255, 43, 237) 0%,
+    rgba(133, 131, 1, 0) 35%,
+    rgba(133, 131, 1, 0) 65%,
+    rgba(255, 43, 237) 100%
+  );
+}
+
+.auction-card-grade-6 {
+  border-image-source: linear-gradient(
+    135deg,
+    rgb(63, 192, 252) 0%,
+    rgba(133, 131, 1, 0) 35%,
+    rgba(133, 131, 1, 0) 65%,
+    rgba(63, 192, 252) 100%
+  );
+}
+
+.auction-card-grade-7 {
+  border-image-source: linear-gradient(
+    135deg,
+    rgb(2, 255, 36) 0%,
+    rgba(133, 131, 1, 0) 35%,
+    rgba(133, 131, 1, 0) 65%,
+    rgba(2, 255, 36) 100%
+  );
+}
+
+.auction-card-grade-8 {
+  border-image-source: linear-gradient(
+    135deg,
+    rgb(2, 255, 36) 0%,
+    rgba(133, 131, 1, 0) 35%,
+    rgba(133, 131, 1, 0) 65%,
+    rgba(2, 255, 36) 100%
+  );
+}
+
+.auction-card-grade-9 {
+  border-image-source: linear-gradient(
+    135deg,
+    rgb(241, 207, 132) 0%,
+    rgba(133, 131, 1, 0) 35%,
+    rgba(133, 131, 1, 0) 65%,
+    rgba(241, 207, 132) 100%
+  );
+}
+
+.ownerBadge:disabled {
+  border: 1px solid peru;
+  margin-right: 3px;
+  color: white;
+}
+
+.cardInfoBtn {
+  background-color: #e3b87f;
+  border-color: #e3b87f;
+}

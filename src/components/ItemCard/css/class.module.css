@@ -1,0 +1,39 @@
+.melee {
+  background: url('../images/classrace/warrior.png');
+}
+
+.range {
+  background: url('../images/classrace/range.png');
+}
+
+.shield {
+  background: url('../images/classrace/shield.png');
+}
+
+.force {
+  background: url('../images/classrace/force.png');
+}
+
+.launcher {
+  background: url('../images/classrace/launcher.png');
+}
+
+.bellato {
+  background: url('../images/classrace/bellato.png');
+}
+
+.cora {
+  background: url('../images/classrace/cora.png');
+}
+
+.acretia {
+  background: url('../images/classrace/acretia.png');
+}
+
+.belcor {
+  background: url('../images/classrace/belcor.png');
+}
+
+.any {
+  background: url('../images/classrace/any.png');
+}

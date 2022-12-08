@@ -1,0 +1,9 @@
+.formBlock {
+  padding: 20px;
+  border: 1px solid peru;
+}
+
+.formBlock a {
+  text-decoration: none;
+  color: peru;
+}

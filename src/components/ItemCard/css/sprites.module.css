@@ -1,0 +1,82 @@
+.helmetSprites {
+  background: url('../images/items_sprites/helmet.jpg');
+}
+
+.upperSprites {
+  background: url('../images/items_sprites/upper.jpg');
+}
+
+.lowerSprites {
+  background: url('../images/items_sprites/lower.jpg');
+}
+
+.shoesSprites {
+  background: url('../images/items_sprites/shoes.jpg');
+}
+
+.gauntletSprites {
+  background: url('../images/items_sprites/gauntlet.jpg');
+}
+
+.weaponSprites {
+  background: url('../images/items_sprites/weapon.jpg');
+}
+
+.shieldSprites {
+  background: url('../images/items_sprites/shield.jpg');
+}
+
+.ringSprites,
+.amuletSprites,
+.cloakSprites {
+  background: url('../images/items_sprites/ringamuletcloak.jpg');
+}
+
+.talic {
+  width: 36px;
+  height: 56px;
+  zoom: 0.45;
+  display: inline-block;
+}
+.talic_0 {
+  background: url('../images/talics/0.png') no-repeat center;
+}
+.talic_1 {
+  background: url('../images/talics/1.png') no-repeat center;
+}
+.talic_2 {
+  background: url('../images/talics/2.png') no-repeat center;
+}
+.talic_3 {
+  background: url('../images/talics/3.png') no-repeat center;
+}
+.talic_4 {
+  background: url('../images/talics/4.png') no-repeat center;
+}
+.talic_5 {
+  background: url('../images/talics/5.png') no-repeat center;
+}
+.talic_6 {
+  background: url('../images/talics/6.png') no-repeat center;
+}
+.talic_7 {
+  background: url('../images/talics/7.png') no-repeat center;
+}
+.talic_8 {
+  background: url('../images/talics/8.png') no-repeat center;
+}
+.talic_9 {
+  background: url('../images/talics/9.png') no-repeat center;
+}
+.talic_a {
+  background: url('../images/talics/a.png') no-repeat center;
+}
+.talic_b {
+  background: url('../images/talics/b.png') no-repeat center;
+}
+.talic_c {
+  background: url('../images/talics/c.png') no-repeat center;
+}
+.talic_f {
+  background: url('../images/talics/f.png') no-repeat center;
+}
