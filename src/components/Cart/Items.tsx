@@ -30,12 +30,12 @@ export default function Items() {
           <h4>Loading...</h4>
         </div>
       ) : null}
-      {!isLoading && itemsList.length === 0 ? (
+      {isSuccess === true && itemsList?.length === 0 ? (
         <div className="text-center">
           <h4>Items not found</h4>
         </div>
       ) : null}
-      {isSuccess === true
+      {isSuccess === true && itemsList?.length > 0
         ? itemsList.map((item) => (
             <div
               key={item.id}

@@ -1,6 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from 'react-query'
 import { useDispatch, useSelector } from 'react-redux'
-import { totalItemsCount } from '../../slices/filtersSlice'
+import { setTotalItemsCount } from '../../slices/paginationSlice'
 import { RootState } from '../../store'
 import useMessage from '../Message/hooks/useMessage'
 import { CartService } from './cart.service'
@@ -30,7 +30,7 @@ export const CartItemsList = (login: string, token: string) => {
         if (status === 'error') {
           setMessage(status, message)
         }
-        dispatch(totalItemsCount(responce.itemsCount))
+        dispatch(setTotalItemsCount(responce.itemsCount))
       },
     }
   )

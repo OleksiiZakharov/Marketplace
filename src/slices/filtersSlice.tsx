@@ -9,8 +9,6 @@ export interface IFiltersInit {
   races: number[]
   page: number
   onPage: number
-  blocksNum: number
-  totalItemsCount: number
 }
 
 interface IToggleFilterPayload {
@@ -26,8 +24,6 @@ const initialState: IFiltersInit = {
   onPage: !localStorage.getItem('onPage')
     ? 6
     : Number(localStorage.getItem('onPage')),
-  blocksNum: 5,
-  totalItemsCount: 0,
 }
 
 export const filtersSlice = createSlice({
@@ -62,9 +58,6 @@ export const filtersSlice = createSlice({
     decrementPage: (state) => {
       state.page = state.page - 1
     },
-    totalItemsCount: (state, action: PayloadAction<number>) => {
-      state.totalItemsCount = action.payload
-    },
     resetFilters: (state) => {
       state.page = 1
       state.categories = []
@@ -80,7 +73,6 @@ export const {
   setOnPage,
   incrementPage,
   decrementPage,
-  totalItemsCount,
   resetFilters,
 } = filtersSlice.actions
 

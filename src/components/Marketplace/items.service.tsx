@@ -1,7 +1,5 @@
 import axios from 'axios'
 
-// axios.defaults.baseURL = 'https://marketplaceback.cerberus.pp.ua'
-
 export const ItemsService = {
   async getItems(
     page: number,

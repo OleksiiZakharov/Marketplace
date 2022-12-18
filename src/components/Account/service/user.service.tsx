@@ -1,7 +1,5 @@
 import axios from 'axios'
 
-// axios.defaults.baseURL = 'https://marketplaceback.cerberus.pp.ua'
-
 export const UserService = {
   async cash(login: string, token: string) {
     return await axios.post(

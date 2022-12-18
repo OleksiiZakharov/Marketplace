@@ -1,6 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from 'react-query'
 import { useDispatch, useSelector } from 'react-redux'
-import { totalItemsCount } from '../../slices/filtersSlice'
+import { setTotalItemsCount } from '../../slices/paginationSlice'
 import { updateCash } from '../../slices/userSlice'
 import { RootState } from '../../store'
 import useMessage from '../Message/hooks/useMessage'
@@ -24,7 +24,7 @@ export const ItemsListApi = () => {
         }
 
         const { itemsCount } = responce
-        dispatch(totalItemsCount(itemsCount))
+        dispatch(setTotalItemsCount(itemsCount))
       },
     }
   )

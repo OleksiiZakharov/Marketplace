@@ -7,6 +7,11 @@ import {
 } from '../../../slices/filtersSlice'
 import { RootState } from '../../../store'
 
+interface IUsePaginationOutput {
+  pages: ICreateBtnObject[]
+  totalItems: number
+}
+
 interface ICreateBtnObject {
   name: string
   handler: Function
@@ -74,14 +79,13 @@ const firstAndLastBlocksNumbers = (
   }
 }
 
-export const usePagination = (): ICreateBtnObject[] => {
+export const usePagination = (): IUsePaginationOutput => {
   const dispatch = useDispatch()
-  const {
-    page,
-    onPage,
-    blocksNum,
-    totalItemsCount: totalItems,
-  } = useSelector((state: RootState) => state.filters)
+  const { page, onPage } = useSelector((state: RootState) => state.filters)
+
+  const { blocksNum, totalItemsCount: totalItems } = useSelector(
+    (state: RootState) => state.pagination
+  )
 
   const maxPages =
     totalItems % onPage === 0
@@ -120,5 +124,5 @@ export const usePagination = (): ICreateBtnObject[] => {
   pages.push(createBtnObject('>', 'Next page', handlerNextPage, false))
   pages.push(createBtnObject('>>', 'Last page', handlerLastPage, false))
 
-  return pages
+  return { pages, totalItems }
 }

@@ -1,11 +1,20 @@
 import { usePagination } from './hooks/usePagination'
 import css from './css/pagination.module.css'
+import { useDispatch } from 'react-redux'
+import { useEffect } from 'react'
+import { setTotalItemsCount } from '../../slices/paginationSlice'
 
 export default function Pagination() {
-  const pages = usePagination()
+  const { pages, totalItems } = usePagination()
+
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(setTotalItemsCount(0))
+  }, [dispatch])
+
   return (
     <>
-      {pages.length > 0 ? (
+      {totalItems > 0 ? (
         <ul className={`pagination`}>
           {pages.map((page, index) => (
             <li
